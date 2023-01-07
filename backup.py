@@ -20,7 +20,7 @@ gauth = GoogleAuth()
 gauth.LocalWebserverAuth()       
 drive = GoogleDrive(gauth)
 
-vc_directory = '<google drive directory id>'
+vc_directory = '<google drive directory id>' ## File ID can be obtained from the we browser when you select the Google drive directory (The Directory ID will be in last on the URL)
 
 ### Move Old files to Trash ###
 
