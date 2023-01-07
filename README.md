@@ -1,7 +1,7 @@
 # vCenter_backup_google_drive
 This Script will upload the VMware backup to Google Drive
 
-Please note this will NOT directly upload the backups from vCenter appliance, you will have to setup a Linux SFTP server. The files will be backed up from the SFTP server to Google Drive
+** Please note this will NOT directly upload the backups from vCenter appliance, you will have to setup a Linux SFTP server. The files will be backed up from the SFTP server to Google Drive
 
 ### Pre-Requisite - Linux SFTP Server ###
 
