@@ -10,8 +10,7 @@ from pydrive2.auth import GoogleAuth
    
 # For using listdir()
 import os
-   
-  
+    
 # Below code does the authentication
 # part of the code
 gauth = GoogleAuth()
@@ -24,12 +23,6 @@ drive = GoogleDrive(gauth)
 vc_directory = '<google drive directory id>'
 
 ### Move Old files to Trash ###
-
-fileList = drive.ListFile({'q': "'<google drive directory id>' in parents and trashed=false"}).GetList()
-for file in fileList:
-  file_id = file['id']
-  gfile_in = drive.CreateFile({'id': file_id})
-  gfile_in.Trash()
 
 fileList = drive.ListFile({'q': "'<google drive directory id>' in parents and trashed=false"}).GetList()
 for file in fileList:
